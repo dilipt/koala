@@ -15,4 +15,6 @@ const app = new Koa()
 app.use(base.routes())
 
 app.listen(3000)
+
+// eslint-disable-next-line no-console
 console.log('Koala started on port 3000.')
