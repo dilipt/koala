@@ -1,0 +1,26 @@
+{
+  "name": "koala",
+  "version": "1.0.0",
+  "description": "playing with koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "testmode": "node index.js",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "keywords": [
+    "koajs"
+  ],
+  "author": "dilipt",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  }
+}
