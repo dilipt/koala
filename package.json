@@ -2,6 +2,10 @@
   "name": "koala",
   "version": "1.0.0",
   "description": "playing with koa",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dilipt/koala.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest",
