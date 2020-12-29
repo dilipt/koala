@@ -6,8 +6,12 @@ COPY package*.json ./
 
 RUN npm install --production
 
-COPY *.js ./
+COPY src ./src
+
+RUN tsc
+
+ENV NODE_ENV=production
 
 EXPOSE 3000
 
-ENTRYPOINT [ "npm", "start"]
+ENTRYPOINT [ "node", "dist/index.js"]

@@ -9,8 +9,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "testmode": "node index.js",
-    "start": "NODE_ENV=production node src/index.js"
+    "build": "tsc",
+    "testmode": "node dist/index.js",
+    "start": "NODE_ENV=production node dist/index.js"
   },
   "keywords": [
     "koajs"
@@ -18,13 +19,12 @@
   "author": "dilipt",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.6.2",
+    "koa": "^2.13.0",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "jest": "^24.1.0"
+    "@types/koa": "^2.11.6",
+    "@types/koa-router": "^7.4.1",
+    "jest": "^24.9.0"
   }
 }
